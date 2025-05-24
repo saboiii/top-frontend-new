@@ -23,9 +23,8 @@ A web portal for NTU CCDS TOP orientation camp, designed to welcome incoming fre
 - **Responsive Design**: Adapts camera and layout for mobile and desktop.
 - **Performance Metrics**:
   - **Load Time**: ~728 ms on desktop, ~13.5s on 4x CPU throttling + slow 4G.
-  - **GPU**: ~1.95 ms/frame (very low)
-  - **CPU**: ~0.90 ms/frame (very low)
-  - **FPS**: 59–60 (smooth animation)
+  - **GPU**: ~1.95 ms/frame on Apple M2
+  - **CPU**: ~0.90 ms/frame on Apple M2
 - **Custom Shaders**: Mouse movement and velocity affect particle displacement for an interactive feel.
 - **Accessible Navigation**: Responsive navbar and dropdown menus for all devices.
 - **Error Handling**: Graceful fallback UI for loading or rendering errors.
