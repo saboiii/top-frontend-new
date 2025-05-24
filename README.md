@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CCDS TOP Official Website
 
-## Getting Started
+A web portal for NTU CCDS TOP orientation camp, designed to welcome incoming freshmen with an interactive and visually engaging experience. This year's theme is **The Hunger Games**, featuring a custom 3D Mockingjay emblem rendered in real time. The site is built for both desktop and mobile, with a focus on performance and immersive graphics.
 
-First, run the development server:
+## Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js 15**
+- **React 19**
+- **Three.js**
+- **React-Three Fiber and Drei**
+- **Tailwind CSS**
+- **Framer Motion** 
+- **gltfpack Compression**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **3D Mockingjay Emblem**: Interactive, animated particle mesh using custom GLSL shaders.
+- **Performance Optimizations**:
+  - gltfpack-compressed GLTF model for fast asset delivery.
+  - Custom loader with smooth progress animation.
+  - Dynamic device pixel ratio (DPR) adjustment based on real-time performance.
+  - Efficient use of draw calls (1 call per frame) and minimal geometry for high FPS.
+- **Responsive Design**: Adapts camera and layout for mobile and desktop.
+- **Performance Metrics**:
+  - **Load Time**: ~728 ms on desktop, ~13.5s on 4x CPU throttling + slow 4G.
+  - **GPU**: ~1.95 ms/frame (very low)
+  - **CPU**: ~0.90 ms/frame (very low)
+  - **FPS**: 59–60 (smooth animation)
+- **Custom Shaders**: Mouse movement and velocity affect particle displacement for an interactive feel.
+- **Accessible Navigation**: Responsive navbar and dropdown menus for all devices.
+- **Error Handling**: Graceful fallback UI for loading or rendering errors.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Authors
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [@saboiii](https://www.github.com/saboiii)
