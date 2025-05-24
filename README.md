@@ -14,10 +14,9 @@ A web portal for NTU CCDS TOP orientation camp, designed to welcome incoming fre
 
 ## Features
 
-- **3D Mockingjay Emblem**: Interactive, animated particle mesh using custom GLSL shaders.
+- **3D Mockingjay Emblem**: Interactive, animated particle mesh using custom GLSL shaders with custom loader with smooth progress animation.
 - **Performance Optimizations**:
   - gltfpack-compressed GLTF model for fast asset delivery.
-  - Custom loader with smooth progress animation.
   - Dynamic device pixel ratio (DPR) adjustment based on real-time performance.
   - Efficient use of draw calls (1 call per frame) and minimal geometry for high FPS.
 - **Responsive Design**: Adapts camera and layout for mobile and desktop.
